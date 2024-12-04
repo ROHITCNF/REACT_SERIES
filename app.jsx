@@ -19,10 +19,18 @@ const TitleComp = () => (
 );
 const HeadingComponent = () => (
   <div>
-    <TitleComp />
     <h1> Hi from component</h1>
   </div>
 );
 
+const reactElement = <span>React Element</span>;
+const headingReactElement = (
+  <h1 id="">
+    {HeadingComponent()}
+    <HeadingComponent />
+    <HeadingComponent></HeadingComponent>
+  </h1>
+);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<HeadingComponent />);
+root.render(headingReactElement);
