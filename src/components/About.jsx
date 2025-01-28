@@ -1,6 +1,7 @@
 import Management from "./Management";
 import ManagemantV2 from "./ManagemantV2";
 import React from "react";
+import Parent from "./liftState/Parent";
 
 class About extends React.Component {
   constructor(props) {
@@ -17,7 +18,8 @@ class About extends React.Component {
     return (
       <div>
         <h2>About Page</h2>
-        <Management name={"testName"} />
+        <Parent />
+        {/* <Management name={"testName"} /> */}
       </div>
     );
   }

@@ -696,4 +696,6 @@ export const CDN_IMG_URL =
 export const LOGO_URL =
   "https://img.freepik.com/premium-vector/burger-logo-template_441059-18.jpg";
 
+export const listState = ["1", "2", "3", "4", "5", "6"];
+
 //NAMED EXPORT

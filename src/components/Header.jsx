@@ -8,13 +8,12 @@ const Header = () => {
     console.log("UseEffect Header Called");
   }, [testVariable]);
   return (
-    <div className="header">
+    <div className="flex justify-between">
       <div className="header-logo">
-        <img height="70px" width="70px" src={LOGO_URL} />
+        <img height="100px" width="100px" src={LOGO_URL} />
       </div>
-      <div className="nav-items">
+      <div className="flex flex-row py-4 px-10 gap-5">
         <p>
-          {" "}
           <Link to={"/"}>Home</Link>
         </p>
         <p>
